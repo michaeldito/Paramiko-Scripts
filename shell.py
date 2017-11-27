@@ -3,6 +3,10 @@
 	@desc: The following class uses the paramiko library to implement a shell that can be used
 	to execute commands on another server. Paramiko implements SSHv2 protocol, providing
 	client and server functionality.
+
+	Example:
+	>>> commands = ['pwd', 'cd']
+	>>> runCommandsInShell(name, password, serverAddress, commands)
 """
 
 import paramiko, socket, time
